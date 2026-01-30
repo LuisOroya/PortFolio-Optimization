@@ -1,0 +1,4 @@
+pyomo>=6.7
+# One of the following solvers (choose ONE):
+# highspy>=1.7    # HiGHS Python bindings
+# or install glpk/cbc/cplex/gurobi system-wide, then point Pyomo to it.

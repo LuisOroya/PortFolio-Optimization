@@ -1,0 +1,30 @@
+#Resetear Memoria
+reset;
+
+#Cargar Modelo
+
+model Modelo_Optimiza_PPAs_HCR_Dia.mod;
+
+#Cargar datos
+#data C:\Users\erick\Desktop\2024_UNICAMP\03_Cursos\TSEEIII\Trabajo_Final\Modelo_Articulo\Modelo_Optimiza_PPAs_HCR_Dia_CAB.dat;
+#data C:\Users\erick\Desktop\2024_UNICAMP\03_Cursos\TSEEIII\Trabajo_Final\Modelo_Articulo\Modelo_Optimiza_PPAs_HCR_Dia_E01.dat;
+#data C:\Users\erick\Desktop\2024_UNICAMP\03_Cursos\TSEEIII\Trabajo_Final\Modelo_Articulo\Modelo_Optimiza_PPAs_HCR_Dia_E02.dat;
+#data C:\Users\erick\Desktop\2024_UNICAMP\03_Cursos\TSEEIII\Trabajo_Final\Modelo_Articulo\Modelo_Optimiza_PPAs_HCR_Dia_E03.dat;
+#data C:\Users\erick\Desktop\2024_UNICAMP\03_Cursos\TSEEIII\Trabajo_Final\Modelo_Articulo\Modelo_Optimiza_PPAs_HCR_Dia_E04.dat;
+#data C:\Users\erick\Desktop\2024_UNICAMP\03_Cursos\TSEEIII\Trabajo_Final\Modelo_Articulo\Modelo_Optimiza_PPAs_HCR_Dia_E05.dat;
+#data C:\Users\erick\Desktop\2024_UNICAMP\03_Cursos\TSEEIII\Trabajo_Final\Modelo_Articulo\Modelo_Optimiza_PPAs_HCR_Dia_E06.dat;
+#data C:\Users\erick\Desktop\2024_UNICAMP\03_Cursos\TSEEIII\Trabajo_Final\Modelo_Articulo\Modelo_Optimiza_PPAs_HCR_Dia_E07.dat;
+data Modelo_Optimiza_PPAs_HCR_Dia_CAB.dat;
+
+#Seleccionar Solver	
+option solver cplex;
+
+# Resolver modelo
+solve;	
+
+#Mostrar Resultados
+display Ingresos;
+display y;
+display CompraSpot;
+display (sum{h in HORAS} (DemandaPortafolioActual[h] + sum{c in CONTRATOS} DemandaPPA[h,c] * y[c]))/(sum{h in HORAS} (Produccion_Convencional[h] + sum{p in PRY_RER} Produccion_RER[h,p]));
+

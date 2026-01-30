@@ -1,0 +1,9 @@
+case,termination,Ingresos,HedgeRate,contracting_level,total_spot,selected_contracts,y
+Modelo_Optimiza_PPAs_HCR_Dia_CAB.dat,optimal,23800.0,0.8,0.7217665615141956,0.0,['NewPPA3'],"{'NewPPA1': 0, 'NewPPA2': 0, 'NewPPA3': 1}"
+Modelo_Optimiza_PPAs_HCR_Dia_E01.dat,optimal,23800.0,0.8,0.7410725552050472,0.0,['NewPPA3'],"{'NewPPA1': 0, 'NewPPA2': 0, 'NewPPA3': 1}"
+Modelo_Optimiza_PPAs_HCR_Dia_E02.dat,optimal,0.0,0.8,0.6661143330571665,0.0,[],"{'NewPPA1': 0, 'NewPPA2': 0, 'NewPPA3': 0}"
+Modelo_Optimiza_PPAs_HCR_Dia_E03.dat,optimal,43200.0,0.8,0.8,0.0,['NewPPA1'],"{'NewPPA1': 1, 'NewPPA2': 0, 'NewPPA3': 0}"
+Modelo_Optimiza_PPAs_HCR_Dia_E04.dat,optimal,24300.0,0.8,0.6350157728706625,0.0,['NewPPA2'],"{'NewPPA1': 0, 'NewPPA2': 1, 'NewPPA3': 0}"
+Modelo_Optimiza_PPAs_HCR_Dia_E05.dat,optimal,23800.0,0.8,0.7217665615141956,0.0,['NewPPA3'],"{'NewPPA1': 0, 'NewPPA2': 0, 'NewPPA3': 1}"
+Modelo_Optimiza_PPAs_HCR_Dia_E06.dat,optimal,66927.0,1.2,1.152365930599369,483.0,"['NewPPA1', 'NewPPA2', 'NewPPA3']","{'NewPPA1': 1, 'NewPPA2': 1, 'NewPPA3': 1}"
+Modelo_Optimiza_PPAs_HCR_Dia_E07.dat,optimal,54900.0,1.2,1.0246056782334385,121.0,"['NewPPA1', 'NewPPA3']","{'NewPPA1': 1, 'NewPPA2': 0, 'NewPPA3': 1}"
